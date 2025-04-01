@@ -36,7 +36,7 @@ const InputArea = ({inputedText, setInputedText}: Text) => {
                     <p>
                         {
                         inputedText.match(/\n/g) ?
-                        (1 + inputedText.match(/\n/g).length) + " 行" :
+                        (1 + inputedText.match(/\n/g)!.length) + " 行" :
                         '改行なし'
                         }
                     </p>
