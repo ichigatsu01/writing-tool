@@ -19,6 +19,8 @@ const InputArea = ({inputedText, setInputedText}: Text) => {
         )
     }
 
+    let textTotalNum: number = inputedText.length
+
     return (
         <div>
             <h1>行数・文字数カウンター</h1>
@@ -47,8 +49,10 @@ const InputArea = ({inputedText, setInputedText}: Text) => {
                 <div>
                     <p>テキストフィールドへ入力すると行数、一行あたりの最大文字列を表示します</p>
                 </div>)
-            
-            }
+                }
+                <div>
+                    <p>現在 {textTotalNum} 文字入力しています。</p>
+                </div>
         </div>
     )
 }
